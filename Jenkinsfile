@@ -11,17 +11,17 @@ pipeline{
     stages{
         stage('build'){
             steps{
-                sh 'npm install'
+                sh "npm install"
             }
         }
         stage('test'){
             steps{
-                sh 'npm test'
+                sh "npm test"
             }
         }
         stage('package'){
             steps{
-                sh 'npm run package'
+                sh "npm run package"
             }
         }
     }
@@ -30,7 +30,5 @@ pipeline{
         always{
             echo 'this pipeline is for shopping-portal application...'
         }
-        
-    }
-    
-}
+    } 
+)
